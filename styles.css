@@ -807,6 +807,11 @@ body {
     text-align: center; /* Centers text content */
 }
 
+/* Styles the Contact Me title specifically */
+.contact-title {
+    color: #ffd700; /* Sets title color to gold for visibility */
+}
+
 /* Styles paragraphs in the Contact content */
 .contact-content p {
     font-size: 18px; /* Sets font size to 18 pixels */
