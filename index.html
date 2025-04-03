@@ -1,0 +1,445 @@
+<!-- Declares the document type as HTML5 -->
+<!DOCTYPE html>
+<!-- Root element of the HTML page with English language attribute -->
+<html lang="en">
+<!-- Head section containing metadata and external resources -->
+<head>
+    <!-- Sets character encoding to UTF-8 for proper text display -->
+    <meta charset="UTF-8">
+    <!-- Configures viewport for responsive design on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sets the title of the webpage displayed in the browser tab -->
+    <title>Ngugi Kamanu | Professional Portfolio</title>
+    <!-- Links to external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Links to Font Awesome CDN for icon support -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Links to Google Fonts for Poppins font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!-- Closes the head section -->
+</head>
+<!-- Body section containing the visible content of the page -->
+<body>
+    <!-- Header section for navigation -->
+    <header class="header">
+        <!-- Navigation container -->
+        <nav class="nav">
+            <!-- Logo container with initials -->
+            <div class="logo">NK</div>
+            <!-- Unordered list for navigation links -->
+            <ul class="nav-links">
+                <!-- List item for Home navigation link -->
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <!-- List item for About navigation link -->
+                <li><a href="#about" class="nav-link">About</a></li>
+                <!-- List item for Mindset navigation link -->
+                <li><a href="#mindset" class="nav-link">Mindset</a></li>
+                <!-- List item for Superpowers navigation link -->
+                <li><a href="#superpowers" class="nav-link">Superpowers</a></li>
+                <!-- List item for Projects navigation link -->
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <!-- List item for Certifications navigation link -->
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <!-- List item for Blogs navigation link -->
+                <li><a href="#blogs" class="nav-link">Blogs</a></li>
+                <!-- List item for Education navigation link -->
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <!-- List item for Contact navigation link -->
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            <!-- Closes the navigation links list -->
+            </ul>
+            <!-- Link to view and download CV, opens in new tab -->
+            <a href="NGUGIKAMANU.pdf" target="_blank" class="cv-button">View & Download CV</a>
+        <!-- Closes the navigation container -->
+        </nav>
+    <!-- Closes the header section -->
+    </header>
+    
+    <!-- Hero Section for introductory content -->
+    <section id="home" class="hero-section">
+        <!-- Container for hero section content -->
+        <div class="hero-content">
+            <!-- Container for the title and SIR letters side by side -->
+            <div class="title-container">
+                <!-- Container for animated SIR letters with full stop, positioned to the left -->
+                <div class="sir-container">
+                    <!-- Span containing SIR with a full stop -->
+                    <span class="sir-text">
+                        <!-- First letter of SIR with animation class -->
+                        <span class="sir-letter">S</span>
+                        <!-- Second letter of SIR with animation class -->
+                        <span class="sir-letter">I</span>
+                        <!-- Third letter of SIR with animation class -->
+                        <span class="sir-letter">R</span>
+                        <!-- Full stop after SIR -->
+                        <span class="sir-letter">.</span>
+                    </span>
+                <!-- Closes the SIR container -->
+                </div>
+                <!-- Main title displaying the name -->
+                <h1 class="hero-title">NGUGI KAMANU</h1>
+            <!-- Closes the title container -->
+            </div>
+            <!-- Paragraph for the tagline with styled span -->
+            <p class="hero-tagline">The code is out there—<span class="navy-text">I just arrange it for profit.</span></p>
+            <!-- Paragraph for the mission statement with styled span -->
+            <p class="hero-mission">I code with logic, I train with data—<span class="navy-text">building smart systems that shape what matters.</span></p>
+            <!-- Call-to-action button linking to contact section -->
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        <!-- Closes the hero content container -->
+        </div>
+    <!-- Closes the hero section -->
+    </section>
+
+    <!-- About Section for personal introduction -->
+    <section id="about" class="about-section">
+        <!-- Section title for About Me -->
+        <h2 class="section-title">About Me</h2>
+        <!-- Container for about section content -->
+        <div class="about-content">
+            <!-- Card containing the about description -->
+            <div class="about-card">
+                <!-- Paragraph describing Ngugi Kamanu -->
+                <p>Hello, I’m Ngugi Kamanu—a passionate software developer and data scientist with a focus on creating practical solutions that drive business value. I combine analytical thinking with technical skills to build applications that solve real-world problems. My journey in tech is fueled by a love for logic, data, and impactful systems.</p>
+            <!-- Closes the about card -->
+            </div>
+            <!-- Container for profile photo -->
+            <div class="photo-container">
+                <!-- Image of Ngugi Kamanu with alt text -->
+                <img src="img/ngugi.jpg" alt="Ngugi Kamanu" class="about-photo">
+            <!-- Closes the photo container -->
+            </div>
+        <!-- Closes the about content container -->
+        </div>
+    <!-- Closes the about section -->
+    </section>
+
+    <!-- Mindset Section for coding philosophy -->
+    <section id="mindset" class="mindset-section">
+        <!-- Section title for My Approach to Coding -->
+        <h2 class="section-title">My Approach to Coding</h2>
+        <!-- Container for mindset section content -->
+        <div class="mindset-content">
+            <!-- Container for the autoplay video -->
+            <div class="video-container">
+                <!-- Video element with autoplay, muted, and loop attributes -->
+                <video class="auto-play-video" autoplay muted loop poster="img/chess-poster.jpg">
+                    <!-- Source of the video file in MP4 format -->
+                    <source src="img/video.mp4" type="video/mp4">
+                    <!-- Fallback text if video is not supported -->
+                    Your browser does not support the video tag.
+                <!-- Closes the video element -->
+                </video>
+            <!-- Closes the video container -->
+            </div>
+            <!-- Card containing mindset description -->
+            <div class="mindset-card">
+                <!-- Caption for the video -->
+                <p class="video-caption">Approaching code with the mindset of a grandmaster.</p>
+                <!-- Container for the mindset story -->
+                <div class="mindset-story">
+                    <!-- Paragraph describing the coding philosophy -->
+                    <p>Picture a chess match where every piece on the board is a line of code, and every move is a choice in a program. A grandmaster doesn’t just push pawns aimlessly—they see the game five moves ahead, weaving a strategy from chaos. Coding is no different. When I sit down to build a system, I’m not just typing commands; I’m playing a game of foresight. I spot potential pitfalls like a knight’s sneaky fork and craft solutions that outmaneuver them. Chess taught me to value the quiet power of a well-placed move—just as a single, clever function can unlock an entire application. It’s a dance of patience, patterns, and precision, where the goal isn’t just to win, but to create something masterful.</p>
+                <!-- Closes the mindset story container -->
+                </div>
+            <!-- Closes the mindset card -->
+            </div>
+        <!-- Closes the mindset content container -->
+        </div>
+    <!-- Closes the mindset section -->
+    </section>
+
+    <!-- Superpowers Section for skills and strengths -->
+    <section id="superpowers" class="superpowers-section">
+        <!-- Section title for Superpowers -->
+        <h2 class="section-title">Superpowers</h2>
+        <!-- Container for superpowers content -->
+        <div class="superpowers-content">
+            <!-- Container for skills list -->
+            <div class="skills">
+                <!-- Sub-title for Skills -->
+                <h3 class="sub-title">Skills</h3>
+                <!-- Unordered list for skills -->
+                <ul class="skills-list">
+                    <!-- List item for Python skill with rating -->
+                    <li class="skill-item"><span class="skill-name">Python</span><span class="skill-level">★★★★★</span></li>
+                    <!-- List item for React.js skill with rating -->
+                    <li class="skill-item"><span class="skill-name">React.js</span><span class="skill-level">★★★★☆</span></li>
+                    <!-- List item for Data Science skill with rating -->
+                    <li class="skill-item"><span class="skill-name">Data Science</span><span class="skill-level">★★★☆☆</span></li>
+                    <!-- List item for SQL & Firebase skill with rating -->
+                    <li class="skill-item"><span class="skill-name">SQL & Firebase</span><span class="skill-level">★★★☆☆</span></li>
+                    <!-- List item for Machine Learning skill with rating -->
+                    <li class="skill-item"><span class="skill-name">Machine Learning</span><span class="skill-level">★★☆☆☆</span></li>
+                <!-- Closes the skills list -->
+                </ul>
+            <!-- Closes the skills container -->
+            </div>
+            <!-- Container for strengths list -->
+            <div class="strengths">
+                <!-- Sub-title for Strengths -->
+                <h3 class="sub-title">Strengths</h3>
+                <!-- Unordered list for strengths -->
+                <ul class="strengths-list">
+                    <!-- List item for Analytical Mindset -->
+                    <li class="strength-item">Analytical Mindset</li>
+                    <!-- List item for Strategic Problem-Solving -->
+                    <li class="strength-item">Strategic Problem-Solving</li>
+                    <!-- List item for Leadership -->
+                    <li class="strength-item">Leadership</li>
+                    <!-- List item for Effective Communication -->
+                    <li class="strength-item">Effective Communication</li>
+                    <!-- List item for Creativity -->
+                    <li class="strength-item">Creativity</li>
+                    <!-- List item for Adaptability -->
+                    <li class="strength-item">Adaptability</li>
+                <!-- Closes the strengths list -->
+                </ul>
+            <!-- Closes the strengths container -->
+            </div>
+        <!-- Closes the superpowers content container -->
+        </div>
+    <!-- Closes the superpowers section -->
+    </section>
+
+    <!-- Projects Section for showcasing projects -->
+    <section id="projects" class="projects-section">
+        <!-- Section title for Glory Projects -->
+        <h2 class="section-title">Glory Projects</h2>
+        <!-- Container for projects timeline -->
+        <div class="projects-timeline">
+            <!-- Milestone container for Project 1 -->
+            <div class="project-milestone" id="project-1">
+                <!-- Card containing Project 1 details -->
+                <div class="project-card">
+                    <!-- Title for Project 1 -->
+                    <h3 class="project-title">1️⃣ AI-Powered Inventory & Demand Forecasting</h3>
+                    <!-- Technologies used in Project 1 -->
+                    <p class="project-tech">Dart/Flutter, Python, Firebase</p>
+                    <!-- Description of Project 1 -->
+                    <p class="project-description">Revolutionizing wheat supply chains with AI-driven insights to reduce deadstock and maximize farmer profits—still in development, stay tuned!</p>
+                    <!-- Image for Project 1 with alt text -->
+                    <img src="img/wheat.jpg" alt="Wheat supply chain project" class="project-image">
+                <!-- Closes the Project 1 card -->
+                </div>
+            <!-- Closes the Project 1 milestone -->
+            </div>
+            <!-- Milestone container for Project 2 -->
+            <div class="project-milestone" id="project-2">
+                <!-- Card containing Project 2 details -->
+                <div class="project-card">
+                    <!-- Title for Project 2 -->
+                    <h3 class="project-title">2️⃣ Retail Data Analyst for Joshy Books</h3>
+                    <!-- Technologies used in Project 2 -->
+                    <p class="project-tech">Python, Pandas, Jupyter Notebook</p>
+                    <!-- Description of Project 2 -->
+                    <p class="project-description">Transforming book & stationery sales data into actionable insights—optimizing inventory and predicting seasonal demand.</p>
+                    <!-- Image for Project 2 with alt text -->
+                    <img src="img/joshy.jpg" alt="Bookshop analytics project" class="project-image">
+                <!-- Closes the Project 2 card -->
+                </div>
+            <!-- Closes the Project 2 milestone -->
+            </div>
+            <!-- Milestone container for Project 3 -->
+            <div class="project-milestone" id="project-3">
+                <!-- Card containing Project 3 details -->
+                <div class="project-card">
+                    <!-- Title for Project 3 -->
+                    <h3 class="project-title">3️⃣ Smart Farm Price Tracker</h3>
+                    <!-- Technologies used in Project 3 -->
+                    <p class="project-tech">React.js, FastAPI, PostgreSQL</p>
+                    <!-- Description of Project 3 -->
+                    <p class="project-description">Empowering farmers with real-time price analytics to ensure fair market rates—coming soon!</p>
+                    <!-- Image for Project 3 with alt text -->
+                    <img src="img/farm.jpg" alt="Smart farm price tracker project" class="project-image">
+                <!-- Closes the Project 3 card -->
+                </div>
+            <!-- Closes the Project 3 milestone -->
+            </div>
+            <!-- Milestone container for journey sign -->
+            <div class="journey-milestone">
+                <!-- Sign container for journey statement -->
+                <div class="journey-sign">
+                    <!-- Paragraph with journey statement -->
+                    <p>The Road to a Billion-Dollar Legacy Starts Here</p>
+                <!-- Closes the journey sign container -->
+                </div>
+            <!-- Closes the journey milestone -->
+            </div>
+        <!-- Closes the projects timeline container -->
+        </div>
+    <!-- Closes the projects section -->
+    </section>
+
+    <!-- Blogs Section for blog posts -->
+    <section id="blogs" class="blogs-section">
+        <!-- Section title for Blogs -->
+        <h2 class="section-title">Blogs</h2>
+        <!-- Container for blogs content -->
+        <div class="blogs-content">
+            <!-- Card for Blog 1 -->
+            <div class="blog-card">
+                <!-- Title for Blog 1 -->
+                <h3 class="blog-title">From Chessboard to Code</h3>
+                <!-- Summary for Blog 1 -->
+                <p class="blog-summary">How chess shapes my problem-solving approach in tech.</p>
+                <!-- Link to full Blog 1, opens in new tab -->
+                <a href="https://www.linkedin.com/pulse/from-chessboard-code-how-chess-taught-me-software-strategy-kamanu-3k8cf" target="_blank" class="blog-link">Read More</a>
+                <!-- Image for Blog 1 with alt text -->
+                <img src="img/chess.jpg" alt="Chess and coding blog" class="blog-image">
+            <!-- Closes the Blog 1 card -->
+            </div>
+            <!-- Card for Blog 2 -->
+            <div class="blog-card">
+                <!-- Title for Blog 2 -->
+                <h3 class="blog-title">My PLP Miracle</h3>
+                <!-- Summary for Blog 2 -->
+                <p class="blog-summary">From a missed deadline to thriving in a coding marathon with Power Learn Project.</p>
+                <!-- Link to full Blog 2, opens in new tab -->
+                <a href="https://www.linkedin.com/pulse/from-deadline-disaster-code-crusader-my-plp-miracle-birthday-kamanu-resqf" target="_blank" class="blog-link">Read More</a>
+                <!-- Image for Blog 2 with alt text -->
+                <img src="img/plp.jpg" alt="PLP scholarship blog" class="blog-image">
+            <!-- Closes the Blog 2 card -->
+            </div>
+        <!-- Closes the blogs content container -->
+        </div>
+    <!-- Closes the blogs section -->
+    </section>
+
+    <!-- Education Section for academic background -->
+    <section id="education" class="education-section">
+        <!-- Section title for Education -->
+        <h2 class="section-title">Education</h2>
+        <!-- Container for education content -->
+        <div class="education-content">
+            <!-- Item for Education 1 -->
+            <div class="education-item">
+                <!-- Image for KCA University with alt text -->
+                <img src="img/kca.jpg" alt="KCA University Logo" class="education-image">
+                <!-- Container for Education 1 details -->
+                <div class="education-details">
+                    <!-- Title for Education 1 -->
+                    <h3 class="education-title">BSc in Data Science</h3>
+                    <!-- Institution name for Education 1 -->
+                    <p class="education-institution">KCA University</p>
+                    <!-- Duration for Education 1 -->
+                    <p class="education-duration">2023 - Present</p>
+                <!-- Closes the Education 1 details container -->
+                </div>
+            <!-- Closes the Education 1 item -->
+            </div>
+            <!-- Item for Education 2 -->
+            <div class="education-item">
+                <!-- Image for Power Learn Project with alt text -->
+                <img src="img/plp2.jpg" alt="Power Learn Project Logo" class="education-image">
+                <!-- Container for Education 2 details -->
+                <div class="education-details">
+                    <!-- Title for Education 2 -->
+                    <h3 class="education-title">Software Development</h3>
+                    <!-- Institution name for Education 2 -->
+                    <p class="education-institution">Power Learn Project Academy</p>
+                    <!-- Duration for Education 2 -->
+                    <p class="education-duration">2025 - Present</p>
+                <!-- Closes the Education 2 details container -->
+                </div>
+            <!-- Closes the Education 2 item -->
+            </div>
+        <!-- Closes the education content container -->
+        </div>
+    <!-- Closes the education section -->
+    </section>
+
+    <!-- Certifications Section for professional credentials -->
+    <section id="certifications" class="certifications-section">
+        <!-- Section title for Certifications -->
+        <h2 class="section-title">Certifications</h2>
+        <!-- Container for certifications marquee -->
+        <div class="certifications-marquee">
+            <!-- Container for scrolling chain of certification images -->
+            <div class="certifications-chain">
+                <!-- Image for Advanced Data Analytics certification -->
+                <img src="img/cert1.jpg" alt="Advanced Data Analytics" class="certification-image">
+                <!-- Image for Business Intelligence certification -->
+                <img src="img/cert2.jpg" alt="Business Intelligence" class="certification-image">
+                <!-- Image for Data Analytics certification -->
+                <img src="img/cert3.jpg" alt="Data Analytics" class="certification-image">
+                <!-- Image for IC3 Digital Literacy Level 1 certification -->
+                <img src="img/cert4.jpg" alt="IC3 Digital Literacy Level 1" class="certification-image">
+                <!-- Image for Introduction to Data Science certification -->
+                <img src="img/cert5.jpg" alt="Introduction to Data Science" class="certification-image">
+                <!-- Image for HTML and CSS certification -->
+                <img src="img/cert6.jpg" alt="HTML and CSS" class="certification-image">
+                <!-- Image for Data Analytics ACWICT certification -->
+                <img src="img/cert7.jpg" alt="Data Analytics ACWICT" class="certification-image">
+                <!-- Image for Networking certification -->
+                <img src="img/cert8.jpg" alt="Networking" class="certification-image">
+                <!-- Duplicate image for Advanced Data Analytics for seamless loop -->
+                <img src="img/cert1.jpg" alt="Advanced Data Analytics" class="certification-image">
+                <!-- Duplicate image for Business Intelligence for seamless loop -->
+                <img src="img/cert2.jpg" alt="Business Intelligence" class="certification-image">
+                <!-- Duplicate image for Data Analytics for seamless loop -->
+                <img src="img/cert3.jpg" alt="Data Analytics" class="certification-image">
+                <!-- Duplicate image for IC3 Digital Literacy Level 1 for seamless loop -->
+                <img src="img/cert4.jpg" alt="IC3 Digital Literacy Level 1" class="certification-image">
+                <!-- Duplicate image for Introduction to Data Science for seamless loop -->
+                <img src="img/cert5.jpg" alt="Introduction to Data Science" class="certification-image">
+                <!-- Duplicate image for HTML and CSS for seamless loop -->
+                <img src="img/cert6.jpg" alt="HTML and CSS" class="certification-image">
+                <!-- Duplicate image for Data Analytics ACWICT for seamless loop -->
+                <img src="img/cert7.jpg" alt="Data Analytics ACWICT" class="certification-image">
+                <!-- Duplicate image for Networking for seamless loop -->
+                <img src="img/cert8.jpg" alt="Networking" class="certification-image">
+            <!-- Closes the certifications chain container -->
+            </div>
+        <!-- Closes the certifications marquee container -->
+        </div>
+    <!-- Closes the certifications section -->
+    </section>
+
+    <!-- Contact Section for contact information and map -->
+    <section id="contact" class="contact-section">
+        <!-- Section title for Contact Me -->
+        <h2 class="section-title">Contact Me</h2>
+        <!-- Container for contact section content -->
+        <div class="contact-content">
+            <!-- Paragraph with contact invitation -->
+            <p>Let’s collaborate to build something impactful! Reach out via email or social media.</p>
+            <!-- Email link for direct contact -->
+            <a href="mailto:ngugikamanu25@gmail.com" class="contact-email">ngugikamanu25@gmail.com</a>
+            <!-- Container for social media links -->
+            <div class="social-links">
+                <!-- LinkedIn link, opens in new tab -->
+                <a href="http://www.linkedin.com/in/ngugikamanu" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <!-- GitHub link, opens in new tab -->
+                <a href="https://github.com/NGUGIKAMANU" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                <!-- Instagram link, opens in new tab -->
+                <a href="https://www.instagram.com/dented_ke/profilecard/?igsh=MWUzeGFlY3NuZG8zeA==" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                <!-- Twitter link, opens in new tab -->
+                <a href="https://x.com/NgugiKamanu_" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                <!-- WhatsApp link, opens in new tab -->
+                <a href="https://wa.me/254757859663" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+            <!-- Closes the social links container -->
+            </div>
+            <!-- Container for Google Maps embed -->
+            <div class="map-container">
+                <!-- Iframe embedding Google Maps with specific location -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8408776566577!2d36.8266969147539!3d-1.2194938990999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1c8b7b5e3b8d%3A0x4b9c7e7e7e7e7e7e!2sThika%20Road%20Mall!5e0!3m2!1sen!2ske!4v1616161616161!5m2!1sen!2ske" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <!-- Closes the map container -->
+            </div>
+        <!-- Closes the contact content container -->
+        </div>
+    <!-- Closes the contact section -->
+    </section>
+
+    <!-- Footer Section for copyright and navigation -->
+    <footer class="footer">
+        <!-- Paragraph with copyright notice -->
+        <p>© 2025 Ngugi Kamanu. All rights reserved.</p>
+        <!-- Link to scroll back to the top of the page -->
+        <a href="#home" class="back-to-top">Back to Top</a>
+    <!-- Closes the footer section -->
+    </footer>
+<!-- Closes the body section -->
+</body>
+<!-- Closes the HTML document -->
+</html>

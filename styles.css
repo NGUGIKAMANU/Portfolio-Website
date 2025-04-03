@@ -1,0 +1,1022 @@
+/* Resets default margins and padding on all elements for consistency */
+* {
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    box-sizing: border-box; /* Ensures padding and borders are included in element dimensions */
+}
+
+/* Applies general styling to the body element */
+body {
+    font-family: 'Poppins', sans-serif; /* Sets Poppins as the default font with sans-serif fallback */
+    color: #333; /* Sets default text color to a dark gray */
+    line-height: 1.6; /* Sets line height for better readability */
+    background-color: #1a1a2e; /* Sets a dark navy background color */
+    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+}
+
+/* Styles the header section */
+.header {
+    background: linear-gradient(90deg, #1a1a2e, #16213e); /* Applies a horizontal gradient from dark navy to a slightly lighter shade */
+    padding: 20px 50px; /* Adds vertical padding of 20px and horizontal padding of 50px */
+    position: sticky; /* Makes the header stick to the top when scrolling */
+    top: 0; /* Positions the header at the top of the viewport */
+    z-index: 100; /* Ensures the header stays above other content */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow below the header */
+}
+
+/* Styles the navigation container */
+.nav {
+    display: flex; /* Uses flexbox for layout */
+    justify-content: space-between; /* Distributes items with space between them */
+    align-items: center; /* Vertically centers items */
+}
+
+/* Styles the logo */
+.logo {
+    font-size: 28px; /* Sets font size to 28 pixels */
+    font-weight: 700; /* Makes the logo text bold */
+    color: #ffd700; /* Sets logo color to gold */
+}
+
+/* Styles the navigation links list */
+.nav-links {
+    list-style: none; /* Removes default bullet points from the list */
+    display: flex; /* Uses flexbox to align links horizontally */
+    gap: 25px; /* Adds 25px spacing between list items */
+}
+
+/* Styles individual navigation links */
+.nav-link {
+    text-decoration: none; /* Removes underline from links */
+    color: #e0e0ff; /* Sets link color to a light purple */
+    font-size: 16px; /* Sets font size to 16 pixels */
+    font-weight: 500; /* Sets medium-bold font weight */
+    transition: color 0.3s ease; /* Smoothly transitions color over 0.3 seconds */
+}
+
+/* Hover effect for navigation links */
+.nav-link:hover {
+    color: #ffd700; /* Changes link color to gold on hover */
+}
+
+/* Styles the CV download button */
+.cv-button {
+    text-decoration: none; /* Removes underline from the button link */
+    background-color: #ffd700; /* Sets background to gold */
+    color: #1a1a2e; /* Sets text color to dark navy */
+    padding: 10px 20px; /* Adds 10px vertical and 20px horizontal padding */
+    border-radius: 25px; /* Rounds the button edges */
+    font-weight: 500; /* Sets medium-bold font weight */
+    transition: background-color 0.3s ease; /* Smoothly transitions background color over 0.3 seconds */
+}
+
+/* Hover effect for the CV button */
+.cv-button:hover {
+    background-color: #e0e0ff; /* Changes background to light purple on hover */
+}
+
+/* Styles the Hero section */
+.hero-section {
+    background: linear-gradient(135deg, #1a1a2e 50%, #e0e0ff 50%); /* Applies a diagonal gradient from dark navy to light purple */
+    padding: 100px 50px; /* Adds 100px vertical and 50px horizontal padding */
+    text-align: center; /* Centers text content */
+    min-height: 100vh; /* Ensures section takes up full viewport height */
+    display: flex; /* Uses flexbox for layout */
+    align-items: center; /* Vertically centers content */
+    justify-content: center; /* Horizontally centers content */
+}
+
+/* Container to hold the SIR and title side by side */
+.title-container {
+    display: flex; /* Uses flexbox to align SIR and title horizontally */
+    align-items: center; /* Vertically centers SIR and NGUGI KAMANU */
+    justify-content: center; /* Centers the combined content horizontally */
+    gap: 40px; /* Adds 40px spacing between SIR. and NGUGI KAMANU for enough space */
+}
+
+/* Container for SIR letters and full stop, now positioned to the left */
+.sir-container {
+    display: inline-block; /* Treats SIR. as a single inline unit */
+}
+
+/* Styles the SIR text wrapper to keep letters together */
+.sir-text {
+    display: inline-flex; /* Uses inline-flex to keep SIR. letters in a horizontal line */
+    align-items: center; /* Vertically centers the letters and full stop */
+}
+
+/* Styles individual SIR letters and full stop for animation and smaller size */
+.sir-letter {
+    display: inline-block; /* Displays letters inline for horizontal arrangement */
+    opacity: 0; /* Starts letters as invisible for animation */
+    transform: translateY(-20px); /* Positions letters 20px above their final spot */
+    color: #ffd700; /* Sets letter color to gold */
+    font-size: 30px; /* Sets font size to 30px, less than half of NGUGI KAMANU's 72px */
+    font-weight: 700; /* Makes letters bold */
+    animation: dropIn 0.5s ease-out forwards; /* Applies drop-in animation lasting 0.5 seconds */
+}
+
+/* Delay for the first SIR letter (S) */
+.sir-letter:nth-child(1) {
+    animation-delay: 3s; /* Delays S animation by 3 seconds */
+}
+
+/* Delay for the second SIR letter (I) */
+.sir-letter:nth-child(2) {
+    animation-delay: 3.2s; /* Delays I animation by 3.2 seconds for stagger effect */
+}
+
+/* Delay for the third SIR letter (R) */
+.sir-letter:nth-child(3) {
+    animation-delay: 3.4s; /* Delays R animation by 3.4 seconds for stagger effect */
+}
+
+/* Delay for the full stop (.) */
+.sir-letter:nth-child(4) {
+    animation-delay: 3.6s; /* Delays full stop animation by 3.6 seconds for stagger effect */
+}
+
+/* Defines the drop-in animation keyframes for SIR letters and full stop */
+@keyframes dropIn {
+    0% { /* Starting state */
+        opacity: 0; /* Letters are invisible */
+        transform: translateY(-20px); /* Letters start 20px above */
+    }
+    100% { /* Ending state */
+        opacity: 1; /* Letters become fully visible */
+        transform: translateY(0); /* Letters land at their final position */
+    }
+}
+
+/* Styles the hero title (NGUGI KAMANU) */
+.hero-title {
+    font-size: 72px; /* Sets large font size for the name */
+    font-weight: 700; /* Makes the name bold */
+    color: #ffd700; /* Sets name color to gold */
+    margin-bottom: 20px; /* Adds 20px space below the title */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+}
+
+/* Styles the hero tagline */
+.hero-tagline {
+    font-size: 24px; /* Sets font size to 24 pixels */
+    color: #e0e0ff; /* Sets text color to light purple */
+    margin-bottom: 15px; /* Adds 15px space below the tagline */
+}
+
+/* Styles the hero mission statement */
+.hero-mission {
+    font-size: 18px; /* Sets font size to 18 pixels */
+    color: #e0e0ff; /* Sets text color to light purple */
+    margin-bottom: 30px; /* Adds 30px space below the mission */
+}
+
+/* Styles text with navy color class */
+.navy-text {
+    color: navy; /* Sets text color to navy blue */
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.8); /* Adds a subtle white glow for contrast */
+}
+
+/* Styles the call-to-action button */
+.cta-button {
+    background-color: #ffd700; /* Sets background to gold */
+    color: #1a1a2e; /* Sets text color to dark navy */
+    padding: 15px 30px; /* Adds 15px vertical and 30px horizontal padding */
+    border-radius: 25px; /* Rounds the button edges */
+    text-decoration: none; /* Removes underline from the link */
+    font-size: 18px; /* Sets font size to 18 pixels */
+    font-weight: 600; /* Sets bold font weight */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smoothly transitions background and scale */
+}
+
+/* Hover effect for the call-to-action button */
+.cta-button:hover {
+    background-color: #e0e0ff; /* Changes background to light purple on hover */
+    transform: scale(1.05); /* Slightly enlarges button on hover */
+}
+
+/* Styles general section titles */
+.section-title {
+    font-size: 40px; /* Sets font size to 40 pixels */
+    font-weight: 700; /* Makes title bold */
+    color: #1a1a2e; /* Sets title color to dark navy */
+    text-align: center; /* Centers the title */
+    margin-bottom: 40px; /* Adds 40px space below the title */
+    position: relative; /* Allows positioning of pseudo-element */
+}
+
+/* Adds an underline effect to section titles */
+.section-title::after {
+    content: ''; /* Creates an empty pseudo-element */
+    position: absolute; /* Positions it relative to the title */
+    bottom: -10px; /* Places it 10px below the title */
+    left: 50%; /* Centers it horizontally */
+    width: 60px; /* Sets width to 60 pixels */
+    height: 4px; /* Sets height to 4 pixels */
+    background-color: #ffd700; /* Sets underline color to gold */
+    transform: translateX(-50%); /* Shifts it left by half its width to center */
+    border-radius: 2px; /* Rounds the edges slightly */
+}
+
+/* Styles the About section */
+.about-section {
+    padding: 80px 50px; /* Adds 80px vertical and 50px horizontal padding */
+    background: linear-gradient(135deg, #f9f9f9 50%, #e0e0ff 50%); /* Applies a diagonal gradient */
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1); /* Adds an inset shadow for depth */
+}
+
+/* Styles the About content container */
+.about-content {
+    display: flex; /* Uses flexbox for layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    gap: 30px; /* Adds 30px spacing between items */
+    max-width: 1200px; /* Limits width to 1200 pixels */
+    margin: 0 auto; /* Centers the container */
+}
+
+/* Styles the About card */
+.about-card {
+    flex: 1; /* Allows card to grow equally */
+    max-width: 600px; /* Limits width to 600 pixels */
+    background: rgba(255, 255, 255, 0.8); /* Sets a semi-transparent white background */
+    backdrop-filter: blur(5px); /* Applies a blur effect to the background */
+    border-radius: 15px; /* Rounds the edges */
+    padding: 20px; /* Adds 20px padding inside */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+    border: 1px solid rgba(255, 215, 0, 0.3); /* Adds a subtle gold border */
+}
+
+/* Styles paragraphs within the About card */
+.about-card p {
+    font-size: 18px; /* Sets font size to 18 pixels */
+    color: #333; /* Sets text color to dark gray */
+    line-height: 1.8; /* Increases line height for readability */
+    text-align: left; /* Aligns text to the left */
+}
+
+/* Styles the photo container */
+.photo-container {
+    flex: 1; /* Allows container to grow equally */
+    max-width: 400px; /* Limits width to 400 pixels */
+    text-align: center; /* Centers the photo */
+}
+
+/* Styles the About photo */
+.about-photo {
+    width: 100%; /* Makes photo fill its container */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 400px; /* Limits height to 400 pixels */
+    border-radius: 10px; /* Rounds the edges */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
+    border: 2px solid #ffd700; /* Adds a gold border */
+}
+
+/* Styles the Mindset section */
+.mindset-section {
+    padding: 80px 50px; /* Adds 80px vertical and 50px horizontal padding */
+    background: linear-gradient(135deg, #f9f9f9 50%, #e0e0ff 50%); /* Applies a diagonal gradient */
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1); /* Adds an inset shadow for depth */
+}
+
+/* Styles the Mindset content container */
+.mindset-content {
+    display: flex; /* Uses flexbox for layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    gap: 30px; /* Adds 30px spacing between items */
+    max-width: 1200px; /* Limits width to 1200 pixels */
+    margin: 0 auto; /* Centers the container */
+}
+
+/* Styles the video container */
+.video-container {
+    flex: 1; /* Allows container to grow equally */
+    max-width: 400px; /* Limits width to 400 pixels */
+}
+
+/* Styles the autoplay video */
+.auto-play-video {
+    width: 100%; /* Makes video fill its container */
+    height: 225px; /* Sets fixed height to 225 pixels */
+    border-radius: 10px; /* Rounds the edges */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
+    opacity: 0; /* Starts video as invisible */
+    animation: fadeInVideo 0.5s ease-in-out 1s forwards; /* Applies fade-in animation after 1s delay */
+    border: 2px solid #ffd700; /* Adds a gold border */
+}
+
+/* Defines the fade-in animation for the video */
+@keyframes fadeInVideo {
+    0% { opacity: 0; } /* Starts with invisible video */
+    100% { opacity: 1; } /* Ends with fully visible video */
+}
+
+/* Styles the Mindset card */
+.mindset-card {
+    flex: 1; /* Allows card to grow equally */
+    max-width: 600px; /* Limits width to 600 pixels */
+    background: rgba(255, 255, 255, 0.8); /* Sets a semi-transparent white background */
+    backdrop-filter: blur(5px); /* Applies a blur effect to the background */
+    border-radius: 15px; /* Rounds the edges */
+    padding: 20px; /* Adds 20px padding inside */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+    border: 1px solid rgba(255, 215, 0, 0.3); /* Adds a subtle gold border */
+}
+
+/* Styles the video caption */
+.video-caption {
+    font-size: 18px; /* Sets font size to 18 pixels */
+    color: #1a1a2e; /* Sets text color to dark navy */
+    text-align: center; /* Centers the caption */
+    margin-bottom: 15px; /* Adds 15px space below */
+    font-style: italic; /* Makes text italic */
+    font-weight: 600; /* Sets bold font weight */
+}
+
+/* Styles paragraphs in the Mindset story */
+.mindset-story p {
+    font-size: 16px; /* Sets font size to 16 pixels */
+    color: #333; /* Sets text color to dark gray */
+    line-height: 1.8; /* Increases line height for readability */
+    text-align: left; /* Aligns text to the left */
+}
+
+/* Styles the Superpowers section */
+.superpowers-section {
+    padding: 80px 50px; /* Adds 80px vertical and 50px horizontal padding */
+    background: linear-gradient(135deg, #f9f9f9 50%, #e0e0ff 50%); /* Applies a diagonal gradient */
+}
+
+/* Styles the Superpowers content container */
+.superpowers-content {
+    display: grid; /* Uses CSS grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Creates responsive columns */
+    gap: 40px; /* Adds 40px spacing between grid items */
+    max-width: 1200px; /* Limits width to 1200 pixels */
+    margin: 0 auto; /* Centers the container */
+}
+
+/* Styles the Skills and Strengths containers */
+.skills, .strengths {
+    background: rgba(255, 255, 255, 0.95); /* Sets a near-opaque white background */
+    padding: 30px; /* Adds 30px padding inside */
+    border-radius: 20px; /* Rounds the edges */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+    border: 2px solid #ffd700; /* Adds a gold border */
+    transition: transform 0.3s ease; /* Smoothly transitions transform over 0.3 seconds */
+}
+
+/* Hover effect for Skills and Strengths containers */
+.skills:hover, .strengths:hover {
+    transform: translateY(-5px); /* Lifts container 5px up on hover */
+}
+
+/* Styles sub-titles in Skills and Strengths */
+.sub-title {
+    font-size: 24px; /* Sets font size to 24 pixels */
+    font-weight: 600; /* Makes text bold */
+    color: #1a1a2e; /* Sets text color to dark navy */
+    margin-bottom: 20px; /* Adds 20px space below */
+    position: relative; /* Allows positioning of pseudo-element */
+}
+
+/* Adds an underline effect to sub-titles */
+.sub-title::after {
+    content: ''; /* Creates an empty pseudo-element */
+    position: absolute; /* Positions it relative to the sub-title */
+    bottom: -5px; /* Places it 5px below the sub-title */
+    left: 0; /* Aligns it to the left */
+    width: 40px; /* Sets width to 40 pixels */
+    height: 3px; /* Sets height to 3 pixels */
+    background-color: #ffd700; /* Sets underline color to gold */
+}
+
+/* Styles the Skills list */
+.skills-list {
+    list-style: none; /* Removes default bullet points */
+}
+
+/* Styles individual skill items */
+.skill-item {
+    display: flex; /* Uses flexbox for layout */
+    justify-content: space-between; /* Distributes content with space between */
+    align-items: center; /* Vertically centers content */
+    padding: 15px 0; /* Adds 15px vertical padding */
+    border-bottom: 1px solid rgba(30, 42, 68, 0.1); /* Adds a subtle navy border below */
+}
+
+/* Styles the skill name */
+.skill-name {
+    font-size: 18px; /* Sets font size to 18 pixels */
+    color: #333; /* Sets text color to dark gray */
+}
+
+/* Styles the skill level */
+.skill-level {
+    color: #ffd700; /* Sets text color to gold */
+    font-size: 18px; /* Sets font size to 18 pixels */
+}
+
+/* Styles the Strengths list */
+.strengths-list {
+    list-style: none; /* Removes default bullet points */
+    display: grid; /* Uses CSS grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Creates responsive columns */
+    gap: 15px; /* Adds 15px spacing between items */
+}
+
+/* Styles individual strength items */
+.strength-item {
+    padding: 12px; /* Adds 12px padding inside */
+    background: rgba(255, 202, 40, 0.1); /* Sets a light gold background */
+    border-radius: 10px; /* Rounds the edges */
+    font-size: 16px; /* Sets font size to 16 pixels */
+    color: #1a1a2e; /* Sets text color to dark navy */
+    display: flex; /* Uses flexbox for layout */
+    align-items: center; /* Vertically centers content */
+    gap: 10px; /* Adds 10px spacing between checkmark and text */
+}
+
+/* Adds a checkmark before each strength item */
+.strength-item::before {
+    content: "✔"; /* Inserts a checkmark symbol */
+    color: #ffd700; /* Sets checkmark color to gold */
+    font-weight: bold; /* Makes checkmark bold */
+}
+
+/* Styles the Projects section */
+.projects-section {
+    padding: 80px 50px; /* Adds 80px vertical and 50px horizontal padding */
+    background: linear-gradient(to bottom, #f9f9f9, #e0e0ff); /* Applies a vertical gradient */
+    position: relative; /* Allows positioning of pseudo-elements */
+    min-height: 100vh; /* Ensures section takes up full viewport height */
+}
+
+/* Styles the Projects timeline container */
+.projects-timeline {
+    position: relative; /* Allows positioning of pseudo-elements */
+    max-width: 1000px; /* Limits width to 1000 pixels */
+    margin: 0 auto; /* Centers the container */
+    height: auto; /* Allows height to adjust to content */
+    padding: 50px 0; /* Adds 50px vertical padding */
+}
+
+/* Creates a road path effect for the timeline */
+.projects-timeline::before {
+    content: ''; /* Creates an empty pseudo-element */
+    position: absolute; /* Positions it relative to the timeline */
+    top: 0; /* Starts at the top */
+    left: 50%; /* Centers it horizontally */
+    width: 4px; /* Sets width to 4 pixels */
+    height: 100%; /* Spans the full height of the timeline */
+    background: repeating-linear-gradient(to bottom, #ffd700 0, #ffd700 10px, transparent 10px, transparent 20px); /* Creates a dashed gold line */
+    transform: translateX(-50%); /* Shifts it left by half its width to center */
+    z-index: 0; /* Places it behind content */
+}
+
+/* Styles individual project milestones */
+.project-milestone {
+    position: relative; /* Allows positioning of pseudo-elements */
+    width: 45%; /* Sets width to 45% of the timeline */
+    margin-bottom: 150px; /* Adds 150px space below each milestone */
+    z-index: 1; /* Ensures milestones stay above the road */
+}
+
+/* Positions odd-numbered milestones */
+.project-milestone:nth-child(odd) {
+    margin-right: auto; /* Aligns odd milestones to the left */
+}
+
+/* Positions even-numbered milestones */
+.project-milestone:nth-child(even) {
+    margin-left: auto; /* Aligns even milestones to the right */
+}
+
+/* Specific adjustments for Project 1 */
+#project-1 {
+    transform: translateX(-10%) rotate(-3deg); /* Shifts left 10% and rotates slightly */
+}
+
+/* Specific adjustments for Project 2 */
+#project-2 {
+    transform: translateX(10%) rotate(3deg); /* Shifts right 10% and rotates slightly */
+}
+
+/* Specific adjustments for Project 3 */
+#project-3 {
+    transform: translateX(-5%) rotate(-2deg); /* Shifts left 5% and rotates slightly */
+}
+
+/* Styles the project card */
+.project-card {
+    background: rgba(255, 255, 255, 0.9); /* Sets a semi-transparent white background */
+    backdrop-filter: blur(5px); /* Applies a blur effect to the background */
+    padding: 25px; /* Adds 25px padding inside */
+    border-radius: 20px; /* Rounds the edges */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Adds a shadow for depth */
+    border: 2px solid #ffd700; /* Adds a gold border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smoothly transitions transform and shadow */
+}
+
+/* Hover effect for the project card */
+.project-card:hover {
+    transform: scale(1.05); /* Slightly enlarges card on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25); /* Increases shadow on hover */
+}
+
+/* Styles the project title */
+.project-title {
+    font-size: 24px; /* Sets font size to 24 pixels */
+    font-weight: 600; /* Makes title bold */
+    color: #1a1a2e; /* Sets title color to dark navy */
+    margin-bottom: 10px; /* Adds 10px space below */
+}
+
+/* Styles the project technologies */
+.project-tech {
+    font-size: 16px; /* Sets font size to 16 pixels */
+    color: #666; /* Sets text color to medium gray */
+    margin-bottom: 10px; /* Adds 10px space below */
+}
+
+/* Styles the project description */
+.project-description {
+    font-size: 16px; /* Sets font size to 16 pixels */
+    color: #333; /* Sets text color to dark gray */
+    margin-bottom: 20px; /* Adds 20px space below */
+}
+
+/* Styles the project image */
+.project-image {
+    width: 100%; /* Makes image fill its container */
+    height: 200px; /* Sets fixed height to 200 pixels */
+    object-fit: cover; /* Ensures image covers area without distortion */
+    border-radius: 10px; /* Rounds the edges */
+    border: 2px solid #ffd700; /* Adds a gold border */
+}
+
+/* Adds road markers to milestones */
+.project-milestone::before {
+    content: ''; /* Creates an empty pseudo-element */
+    position: absolute; /* Positions it relative to the milestone */
+    top: 50%; /* Centers it vertically */
+    width: 20px; /* Sets width to 20 pixels */
+    height: 20px; /* Sets height to 20 pixels */
+    background: #ffd700; /* Sets marker color to gold */
+    border-radius: 50%; /* Makes marker circular */
+    z-index: 1; /* Ensures marker stays above the road */
+    transform: translateY(-50%); /* Shifts it up by half its height to center */
+}
+
+/* Positions markers for odd milestones */
+.project-milestone:nth-child(odd)::before {
+    right: -30px; /* Places marker 30px to the right */
+}
+
+/* Positions markers for even milestones */
+.project-milestone:nth-child(even)::before {
+    left: -30px; /* Places marker 30px to the left */
+}
+
+/* Styles the journey milestone */
+.journey-milestone {
+    position: relative; /* Allows positioning */
+    width: 100%; /* Spans full width */
+    text-align: center; /* Centers text */
+    margin-top: 50px; /* Adds 50px space above */
+    z-index: 1; /* Ensures it stays above the road */
+}
+
+/* Styles the journey sign */
+.journey-sign {
+    display: inline-block; /* Displays as inline-block for centering */
+    background: #ffd700; /* Sets background to gold */
+    color: #1a1a2e; /* Sets text color to dark navy */
+    padding: 20px 40px; /* Adds 20px vertical and 40px horizontal padding */
+    border-radius: 15px; /* Rounds the edges */
+    font-size: 24px; /* Sets font size to 24 pixels */
+    font-weight: 700; /* Makes text bold */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+    border: 2px solid #1a1a2e; /* Adds a dark navy border */
+    transform: rotate(-2deg); /* Slightly rotates the sign */
+    animation: pulse 2s infinite ease-in-out; /* Applies a pulsing animation */
+}
+
+/* Defines the pulse animation for the journey sign */
+@keyframes pulse {
+    0% { transform: scale(1) rotate(-2deg); } /* Starts at normal size and rotation */
+    50% { transform: scale(1.05) rotate(-2deg); } /* Peaks at 5% larger */
+    100% { transform: scale(1) rotate(-2deg); } /* Returns to normal size */
+}
+
+/* Styles the Blogs section */
+.blogs-section {
+    padding: 80px 50px; /* Adds 80px vertical and 50px horizontal padding */
+    background: linear-gradient(135deg, #f9f9f9 50%, #e0e0ff 50%); /* Applies a diagonal gradient */
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1); /* Adds an inset shadow for depth */
+}
+
+/* Styles the Blogs content container */
+.blogs-content {
+    max-width: 1200px; /* Limits width to 1200 pixels */
+    margin: 0 auto; /* Centers the container */
+    display: flex; /* Uses flexbox for layout */
+    flex-wrap: wrap; /* Allows items to wrap to next line */
+    gap: 30px; /* Adds 30px spacing between items */
+    justify-content: center; /* Centers items horizontally */
+}
+
+/* Styles individual blog cards */
+.blog-card {
+    background: rgba(255, 255, 255, 0.9); /* Sets a semi-transparent white background */
+    backdrop-filter: blur(5px); /* Applies a blur effect to the background */
+    padding: 30px; /* Adds 30px padding inside */
+    border-radius: 15px; /* Rounds the edges */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+    border: 1px solid rgba(255, 215, 0, 0.3); /* Adds a subtle gold border */
+    width: 100%; /* Makes card full width of its container */
+    max-width: 500px; /* Limits width to 500 pixels */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smoothly transitions transform and shadow */
+}
+
+/* Hover effect for blog cards */
+.blog-card:hover {
+    transform: translateY(-10px); /* Lifts card 10px up on hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25), 0 0 15px rgba(255, 215, 0, 0.3); /* Increases shadow and adds gold glow */
+}
+
+/* Styles the blog title */
+.blog-title {
+    font-size: 24px; /* Sets font size to 24 pixels */
+    font-weight: 600; /* Makes title bold */
+    color: #1a1a2e; /* Sets title color to dark navy */
+    margin-bottom: 10px; /* Adds 10px space below */
+}
+
+/* Styles the blog summary */
+.blog-summary {
+    font-size: 16px; /* Sets font size to 16 pixels */
+    color: #666; /* Sets text color to medium gray */
+    margin-bottom: 20px; /* Adds 20px space below */
+}
+
+/* Styles the blog link */
+.blog-link {
+    text-decoration: none; /* Removes underline from the link */
+    color: #1a1a2e; /* Sets text color to dark navy */
+    background-color: #e0e0ff; /* Sets background to light purple */
+    padding: 10px 20px; /* Adds 10px vertical and 20px horizontal padding */
+    border-radius: 20px; /* Rounds the edges */
+    font-weight: 500; /* Sets medium-bold font weight */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smoothly transitions background and color */
+}
+
+/* Hover effect for the blog link */
+.blog-link:hover {
+    background-color: #ffd700; /* Changes background to gold on hover */
+    color: #1a1a2e; /* Keeps text color as dark navy */
+}
+
+/* Styles the blog image */
+.blog-image {
+    width: 100%; /* Makes image fill its container */
+    height: 200px; /* Sets fixed height to 200 pixels */
+    object-fit: cover; /* Ensures image covers area without distortion */
+    border-radius: 10px; /* Rounds the edges */
+    margin-top: 20px; /* Adds 20px space above */
+    border: 2px solid #ffd700; /* Adds a gold border */
+}
+
+/* Styles the Education section */
+.education-section {
+    padding: 80px 50px; /* Adds 80px vertical and 50px horizontal padding */
+    background: linear-gradient(135deg, #f9f9f9 50%, #e0e0ff 50%); /* Applies a diagonal gradient */
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1); /* Adds an inset shadow for depth */
+}
+
+/* Styles the Education content container */
+.education-content {
+    display: flex; /* Uses flexbox for layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    gap: 30px; /* Adds 30px spacing between items */
+    max-width: 1200px; /* Limits width to 1200 pixels */
+    margin: 0 auto; /* Centers the container */
+}
+
+/* Styles individual education items */
+.education-item {
+    flex: 1; /* Allows item to grow equally */
+    max-width: 500px; /* Limits width to 500 pixels */
+    background: rgba(255, 255, 255, 0.9); /* Sets a semi-transparent white background */
+    backdrop-filter: blur(5px); /* Applies a blur effect to the background */
+    border-radius: 15px; /* Rounds the edges */
+    padding: 20px; /* Adds 20px padding inside */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+    border: 1px solid rgba(255, 215, 0, 0.3); /* Adds a subtle gold border */
+    display: flex; /* Uses flexbox for layout */
+    align-items: center; /* Vertically centers content */
+    gap: 20px; /* Adds 20px spacing between image and details */
+}
+
+/* Styles the education image */
+.education-image {
+    width: 100px; /* Sets width to 100 pixels */
+    height: 100px; /* Sets height to 100 pixels */
+    object-fit: contain; /* Ensures image fits without cropping */
+    border-radius: 10px; /* Rounds the edges */
+    border: 2px solid #ffd700; /* Adds a gold border */
+}
+
+/* Styles the education details container */
+.education-details {
+    flex: 1; /* Allows details to grow equally */
+}
+
+/* Styles the education title */
+.education-title {
+    font-size: 20px; /* Sets font size to 20 pixels */
+    font-weight: 600; /* Makes title bold */
+    color: #1a1a2e; /* Sets title color to dark navy */
+    margin-bottom: 5px; /* Adds 5px space below */
+}
+
+/* Styles the education institution */
+.education-institution {
+    font-size: 16px; /* Sets font size to 16 pixels */
+    color: #666; /* Sets text color to medium gray */
+    margin-bottom: 5px; /* Adds 5px space below */
+}
+
+/* Styles the education duration */
+.education-duration {
+    font-size: 14px; /* Sets font size to 14 pixels */
+    color: #999; /* Sets text color to light gray */
+}
+
+/* Styles the Certifications section */
+.certifications-section {
+    padding: 80px 50px; /* Adds 80px vertical and 50px horizontal padding */
+    background: linear-gradient(135deg, #f9f9f9 50%, #e0e0ff 50%); /* Applies a diagonal gradient */
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1); /* Adds an inset shadow for depth */
+    overflow: hidden; /* Prevents overflow from marquee */
+}
+
+/* Styles the Certifications marquee container */
+.certifications-marquee {
+    width: 100%; /* Makes container full width */
+    max-width: 1200px; /* Limits width to 1200 pixels */
+    margin: 0 auto; /* Centers the container */
+    overflow: hidden; /* Hides overflow from scrolling */
+    height: 220px; /* Sets fixed height to 220 pixels */
+}
+
+/* Styles the Certifications chain for scrolling */
+.certifications-chain {
+    display: flex; /* Uses flexbox for layout */
+    gap: 20px; /* Adds 20px spacing between images */
+    animation: scroll 25s linear infinite; /* Applies a 25-second scrolling animation */
+    width: max-content; /* Allows chain to exceed container width */
+}
+
+/* Pauses the animation when hovering over the marquee */
+.certifications-marquee:hover .certifications-chain {
+    animation-play-state: paused; /* Pauses the scroll animation on hover */
+}
+
+/* Styles individual certification images */
+.certification-image {
+    width: 400px; /* Sets width to 400 pixels */
+    height: 200px; /* Sets height to 200 pixels */
+    object-fit: cover; /* Ensures image covers area without distortion */
+    flex-shrink: 0; /* Prevents image from shrinking */
+}
+
+/* Defines the scroll animation keyframes */
+@keyframes scroll {
+    0% { transform: translateX(0); } /* Starts at initial position */
+    100% { transform: translateX(-50%); } /* Moves left by half its width */
+}
+
+/* Styles the Contact section */
+.contact-section {
+    padding: 80px 50px; /* Adds 80px vertical and 50px horizontal padding */
+    background: linear-gradient(135deg, #1a1a2e 40%, #2a3b5e 60%); /* Applies a diagonal gradient */
+    color: #e0e0ff; /* Sets text color to light purple */
+    text-align: center; /* Centers text content */
+}
+
+/* Styles paragraphs in the Contact content */
+.contact-content p {
+    font-size: 18px; /* Sets font size to 18 pixels */
+    margin-bottom: 20px; /* Adds 20px space below */
+}
+
+/* Styles the contact email link */
+.contact-email {
+    text-decoration: none; /* Removes underline from the link */
+    color: #ffd700; /* Sets text color to gold */
+    font-size: 20px; /* Sets font size to 20 pixels */
+    font-weight: 500; /* Sets medium-bold font weight */
+    margin-bottom: 30px; /* Adds 30px space below */
+    display: inline-block; /* Allows margin to apply correctly */
+}
+
+/* Styles the social links container */
+.social-links {
+    display: flex; /* Uses flexbox for layout */
+    justify-content: center; /* Centers links horizontally */
+    gap: 20px; /* Adds 20px spacing between links */
+    margin-bottom: 30px; /* Adds 30px space below */
+}
+
+/* Styles individual social links */
+.social-link {
+    color: #e0e0ff; /* Sets icon color to light purple */
+    font-size: 30px; /* Sets icon size to 30 pixels */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smoothly transitions color and scale */
+}
+
+/* Hover effect for social links */
+.social-link:hover {
+    color: #ffd700; /* Changes icon color to gold on hover */
+    transform: scale(1.2); /* Enlarges icon by 20% on hover */
+}
+
+/* Styles the map container iframe */
+.map-container iframe {
+    width: 100%; /* Makes iframe fill its container */
+    height: 300px; /* Sets fixed height to 300 pixels */
+    border-radius: 10px; /* Rounds the edges */
+}
+
+/* Styles the footer */
+.footer {
+    background-color: #16213e; /* Sets background to a dark navy shade */
+    padding: 20px; /* Adds 20px padding */
+    text-align: center; /* Centers text content */
+    color: #e0e0ff; /* Sets text color to light purple */
+    font-size: 14px; /* Sets font size to 14 pixels */
+}
+
+/* Styles the back-to-top link */
+.back-to-top {
+    color: #ffd700; /* Sets text color to gold */
+    text-decoration: none; /* Removes underline from the link */
+    font-weight: 500; /* Sets medium-bold font weight */
+    margin-left: 20px; /* Adds 20px space to the left */
+    transition: color 0.3s ease; /* Smoothly transitions color */
+}
+
+/* Hover effect for the back-to-top link */
+.back-to-top:hover {
+    color: #e0e0ff; /* Changes text color to light purple on hover */
+}
+
+/* Media query for screens 768px and smaller */
+@media (max-width: 768px) {
+    /* Adjusts the navigation layout for smaller screens */
+    .nav {
+        flex-direction: column; /* Stacks items vertically */
+        gap: 20px; /* Adds 20px spacing between items */
+    }
+
+    /* Adjusts the navigation links list for smaller screens */
+    .nav-links {
+        flex-direction: column; /* Stacks links vertically */
+        gap: 10px; /* Adds 10px spacing between links */
+    }
+
+    /* Adjusts the hero title for smaller screens */
+    .hero-title {
+        font-size: 48px; /* Reduces font size to 48 pixels */
+    }
+
+    /* Adjusts the hero tagline for smaller screens */
+    .hero-tagline {
+        font-size: 20px; /* Reduces font size to 20 pixels */
+    }
+
+    /* Adjusts the Superpowers content for smaller screens */
+    .superpowers-content {
+        flex-direction: column; /* Stacks items vertically (though originally grid) */
+        align-items: center; /* Centers items horizontally */
+    }
+
+    /* Adjusts project, certification, blog, and education cards for smaller screens */
+    .project-card, .certification-card, .blog-card, .education-item {
+        max-width: 100%; /* Makes cards full width */
+    }
+
+    /* Adjusts the Projects timeline padding for smaller screens */
+    .projects-timeline {
+        padding: 20px 0; /* Reduces vertical padding to 20px */
+        max-width: 100%; /* Makes timeline full width */
+    }
+
+    /* Adjusts project milestones for smaller screens */
+    .project-milestone {
+        width: 80%; /* Increases width to 80% */
+        margin-bottom: 100px; /* Reduces space below to 100px */
+        transform: none; /* Removes any transforms */
+    }
+
+    /* Adjusts odd and even milestones for smaller screens */
+    .project-milestone:nth-child(odd), .project-milestone:nth-child(even) {
+        margin-left: auto; /* Centers odd milestones */
+        margin-right: auto; /* Centers even milestones */
+    }
+
+    /* Hides road markers on smaller screens */
+    .project-milestone::before {
+        display: none; /* Removes markers */
+    }
+
+    /* Shifts the road path on smaller screens */
+    .projects-timeline::before {
+        left: 10%; /* Moves road to 10% from the left */
+    }
+
+    /* Adjusts the journey sign for smaller screens */
+    .journey-sign {
+        font-size: 18px; /* Reduces font size to 18 pixels */
+        padding: 15px 30px; /* Reduces padding to 15px vertical, 30px horizontal */
+    }
+
+    /* Adjusts the Blogs section padding for smaller screens */
+    .blogs-section {
+        padding: 40px 20px; /* Reduces padding to 40px vertical, 20px horizontal */
+    }
+
+    /* Adjusts the Blogs content for smaller screens */
+    .blogs-content {
+        flex-direction: column; /* Stacks items vertically */
+        align-items: center; /* Centers items horizontally */
+    }
+
+    /* Adjusts blog cards for smaller screens */
+    .blog-card {
+        max-width: 100%; /* Makes cards full width */
+    }
+
+    /* Adjusts the Education content for smaller screens */
+    .education-content {
+        flex-direction: column; /* Stacks items vertically */
+        gap: 20px; /* Reduces spacing to 20px */
+    }
+
+    /* Adjusts education items for smaller screens */
+    .education-item {
+        max-width: 100%; /* Makes items full width */
+        flex-direction: column; /* Stacks image and details vertically */
+        text-align: center; /* Centers text */
+    }
+
+    /* Adjusts education images for smaller screens */
+    .education-image {
+        margin-bottom: 10px; /* Adds 10px space below */
+    }
+
+    /* Adjusts the Certifications section padding for smaller screens */
+    .certifications-section {
+        padding: 40px 20px; /* Reduces padding to 40px vertical, 20px horizontal */
+    }
+
+    /* Adjusts the Certifications marquee height for smaller screens */
+    .certifications-marquee {
+        height: 120px; /* Reduces height to 120 pixels */
+    }
+
+    /* Adjusts the Certifications chain for smaller screens */
+    .certifications-chain {
+        animation: none; /* Removes scrolling animation */
+        flex-wrap: nowrap; /* Prevents wrapping */
+        overflow-x: auto; /* Enables horizontal scrolling */
+        padding-bottom: 20px; /* Adds 20px space below for scrollbar */
+        scrollbar-width: thin; /* Sets thin scrollbar for Firefox */
+        scrollbar-color: #ffd700 #e0e0ff; /* Colors scrollbar thumb gold and track light purple */
+    }
+
+    /* Styles the Webkit scrollbar for smaller screens */
+    .certifications-chain::-webkit-scrollbar {
+        height: 8px; /* Sets scrollbar height to 8 pixels */
+    }
+
+    /* Styles the Webkit scrollbar thumb for smaller screens */
+    .certifications-chain::-webkit-scrollbar-thumb {
+        background: #ffd700; /* Sets thumb color to gold */
+        border-radius: 4px; /* Rounds the edges */
+    }
+
+    /* Styles the Webkit scrollbar track for smaller screens */
+    .certifications-chain::-webkit-scrollbar-track {
+        background: #e0e0ff; /* Sets track color to light purple */
+    }
+
+    /* Adjusts certification images for smaller screens */
+    .certification-image {
+        width: 200px; /* Reduces width to 200 pixels */
+        height: 100px; /* Reduces height to 100 pixels */
+    }
+}
