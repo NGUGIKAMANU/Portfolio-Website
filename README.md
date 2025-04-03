@@ -42,7 +42,7 @@ This portfolio is a **spiral road of innovation**, where every twist and turn re
 
 ### 📥 Clone the Repo
 ```bash
-git clone https://github.com/NGUGIKAMANU/PortfolioWebsite.git
+git clone https://github.com/NGUGIKAMANU/Portfolio-Website.git
 ```
 
 ### 🔍 Navigate In
