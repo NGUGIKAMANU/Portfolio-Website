@@ -84,6 +84,12 @@ Scroll, click, and soak in the vibes. No build steps needed—just pure HTML and
 
 ---
 
+## ⏰ **The Marathon Story—Pure Nairobi Hustle**
+
+Picture this: It’s April 3, 2025, almost midnight. I had a Calculus II exam today—derivatives haunting me like a bad ex—and a Cryptography exam tomorrow, yet here I am, coding this beast like a madman. Hii ni marathon ya PLP style—two days, no sleep, just vibes, uji, and prayers I don’t mix up integrals with CSS selectors. Hii ni hustle ya mtaa, bro—exams can wait, legacy can’t! 😅
+
+---
+
 ## 🧠 **Mindset Matrix** 🧠
 
 + ♟️ **Chess Principle #1:** Sacrifice pawns to capture queens
